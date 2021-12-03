@@ -61,6 +61,21 @@ describe("Automation Tests",() => {
         let searchResults = await page.getText(page.searchVerification);
         await console.log(searchResults);
         expect(searchResults).toContain("Dress");
+        await page.getElement(page.searchBox);
+        await page.click(page.searchBox);
+        await page.getElement(page.searchList)
+        await page.setInput(page.searchList, 'a;sldkfjeiwopq\n');
+        let searchResults2 = await page.getText(page.searchVerification);
+        await console.log(searchResults2);
+        expect(searchResults2).toContain("a;sldkfjeiwopq");
+        await page.getElement(page.searchBox);
+        await page.click(page.searchBox);
+        await page.getElement(page.searchList)
+        await page.setInput(page.searchList, 'HelloWhoeverIsReadingThis!\n');
+        let searchResults3 = await page.getText(page.searchVerification);
+        await console.log(searchResults3);
+        expect(searchResults3).toContain("HelloWhoeverIsReadingThis!");
+
     })
     // this will test a bug that allows for more characters than intended in the edit profile section using a json.
     // if the test fails, then that means the bug is gone :)
