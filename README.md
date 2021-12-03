@@ -5,8 +5,6 @@ There are seven tests total and two tests that verify if a bug is still present.
 These tests can be found on the BoredPandaTests.test.ts file.
 The comments given therein will elaborate further upon what the tests do and current issues.
 
-Here is a link to the Jira aspect of this project, showing the entire process from planning, testing, automating, and reporting:
-              
-                https://dmutah.atlassian.net/jira/software/c/projects/MSP/issues/MSP-1
+Here is a link to the Jira aspect of this project, showing the entire process from planning, testing, automating, and reporting: https://dmutah.atlassian.net/jira/software/c/projects/MSP/issues/MSP-1
 
 Thank You!
