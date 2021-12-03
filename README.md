@@ -1,6 +1,7 @@
 # QRPT5 Marcus Connors Solo Project For BoredPanda.com
 Bored Panda (https://www.boredpanda.com/) is a social networking site that's mission is to: 
-> spread good news and highlight top artists from around the world.
+> spread good news and highlight top artists from around the world. <
+
 I focused my testing on the Home Page Navigation Buttons, Search Bar, and Login/Logout Functionality.
 There are seven tests total and two tests that verify if a bug is still present.
 These tests can be found on the BoredPandaTests.test.ts file.
