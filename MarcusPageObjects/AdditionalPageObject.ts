@@ -23,6 +23,7 @@ export class additionalPageObject extends BasePage {
     logInEnter: By = By.xpath('//button[@data-bind="click: $parent.login"]');
     loginError: By = By.xpath('//div[@class="login-form"]//p[@class="text-danger"]');
     loginExit: By = By.xpath('//a[@class="close"][1]');
+    meSpan: By = By.xpath('//li[@class="user-menu"]//a[@class="button"]//span');
     moreTab: By = By.xpath('//nav//li[@class="more"]//a[@href="javascript:void(0)"]');
     newsletterTab: By = By.xpath('//div[@class="bp-container"]//a[@class="newsletter"]');
     pandaLogo: By = By.xpath('//div[@class="logotype "]//a[@href="https://www.boredpanda.com"]');

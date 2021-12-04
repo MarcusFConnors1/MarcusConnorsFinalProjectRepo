@@ -25,6 +25,8 @@ describe("Automation Tests",() => {
         // these are the credentials I used, if you want to use other credentials you would change these two lines
         await page.setInput(page.email, "biffrocker1@gmail.com");
         await page.setInput(page.password, "HelloBoredPanda01!\n");
+        let meVerification = await page.getText(page.meSpan);
+        expect(meVerification).toEqual("Me");
         //========================================================================================================
         await page.getElement(page.profileBtn);
         await page.click(page.profileBtn);
